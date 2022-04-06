@@ -36,10 +36,11 @@ class PanierController extends Controller
       return Redirect::route('listpanier');
    }
    public function listpanier(){
-    $Artss = Panier::all();
+    $Artss = Panier::all()->where('user_id',Auth::user()->id);
 
     return view('panierview',['p'=>$Artss]);
    }
+
    public function deletepanier(Request $rqt){
 
     $id = $rqt['id'];

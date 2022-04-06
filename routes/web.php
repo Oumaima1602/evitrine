@@ -63,6 +63,8 @@ Route::get('/homme/2',[ArticleController::class, 'homme'])->name('homme');
 
 
 Route::get('/panier/{id}',[PanierController::class, 'addpanier'])->name('panier');
+Route::get('/panier',[PanierController::class, 'listpanier'])->name('panieruser');
+
 Route::get('/displaypanier',[PanierController::class, 'listpanier'])->name('listpanier');
 route::get('/deletepanier',[PanierController::class,"deletepanier"])->name('deletepanier');
 

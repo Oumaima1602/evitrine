@@ -1,4 +1,4 @@
-@extends('backend')
+@extends('layouts.app')
 
 @section('content')
 
@@ -47,3 +47,4 @@
 
 
 </table> 
+@endsection 

@@ -26,7 +26,7 @@ class ArticleController extends Controller
         // $articles=new Article();
 
         //  $listeArt=$articles::all()->where('cat_id',2);
-         $listeArt =  DB::table('articles')->where('cat_id',2)->paginate(4);
+         $listeArt =  DB::table('articles')->where('cat_id',2)->paginate(3);
          return view ("Artfemme",['lisArt'=>$listeArt]);
     }
 

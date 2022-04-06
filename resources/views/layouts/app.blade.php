@@ -56,12 +56,14 @@
     <li class="nav-item">
         <a class="nav-link" href="{{ route('home') }}"  style=" color:white">HOME</a>
       </li>
-   
-    @endif
-                    </ul>
+      
+    @endif 
+           
+                
+           </ul>
 
 
-                    <ul class="navbar-nav  ">
+                    <ul class="navbar-nav  "  ">
                         <!-- Authentication Links -->
                         @guest
                             @if (Route::has('login'))
@@ -76,7 +78,7 @@
                                 </li>
                             @endif
                         @else
-                            <li class="nav-item dropdown">
+                            <li class="nav-item dropdown"  style="margin-top:6px;">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre   style=" color:white">
                                     {{ Auth::user()->name }}
                                 </a>
@@ -94,6 +96,18 @@
                                 </div>
                             </li>
                         @endguest
+
+ @if(Auth::user())
+
+@if(Auth::user()->is_admin==0)
+
+     <li class="nav-item">
+     <a href="{{route('panieruser')}}" type="submit" class="btn btn-dark my-2" name="submit"><i class="bi bi-cart-plus-fill"></i></a>
+</li>
+
+
+    @endif 
+    @endif 
                     </ul>
                 </div>
             </div>

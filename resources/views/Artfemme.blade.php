@@ -63,6 +63,8 @@ width:20%;
  <p class="dis">{{$Art["description"]}} </p>
  <p class="">{{$Art["prix_unitaire"]}} DH</p>   
 
+
+@if(Auth::user()->is_admin==0)
  <form method="get"  action="{{route('panier',$Art['id'])}}">
   
  <label  style =" ">Quantité :   </label>
@@ -71,6 +73,7 @@ width:20%;
  <label  style =" ">Ajouter au panier  :   </label>
 <button type="submit" class="btn btn-dark my-2" name="submit"><i class="bi bi-cart-plus-fill"></i></button>
 </form>
+@endif
 </div>
 </div>
 @endforeach
