@@ -1,0 +1,63 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    color: aliceblue;
+  }
+#login{
+    opacity: 1;
+    color: rgb(7, 7, 7);
+    font-weight: 800	;
+    border-left: 6px solid rgb(55, 54, 54);
+    
+}
+#hii {
+/*   
+   background-color: tan; */
+    /* background-image:url('smart4.jpg'); */
+    background-size: cover; 
+
+    background-repeat: no-repeat;
+    background-position: center;
+    /* padding:5px 15px; */
+    height: 100%;
+}
+.container-fluid{
+    width: 100%;
+    padding: 0%;
+}
+.card-body{
+    /* #fcd5d1; */
+    background-color: black;
+    opacity: 0.9;
+   
+}
+#nav{
+    background-color: rgb(26, 25, 25);
+    ;
+  
+    /* opacity: 0.8; */
+    width: 100% !important;
+   
+}
+/* p{
+    padding: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color: tan;
+    font-size:150px;
+    margin-top: 110px;
+    text-shadow: -10px 2px 9px  rgb(148, 133, 115);
+    
+    
+} */
+#login{
+    color: rgb(6, 60, 108);
+    background-color: rgb(247, 247, 248);
+}
+.card{
+ 
+     opacity: 0.9;
+     margin-top: 110px;
+   margin-left: 100px;
+   margin-right: 100px;}
+
