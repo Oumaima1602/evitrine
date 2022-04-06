@@ -54,7 +54,7 @@
 
 
     <li class="nav-item">
-        <a class="nav-link" href="{{ route('home') }}"  style=" color:white">HOME</a>
+        <a class="nav-link" href="{{ route('home') }}"  style=" color:white ">HOME</a>
       </li>
       
     @endif 
@@ -63,7 +63,7 @@
            </ul>
 
 
-                    <ul class="navbar-nav  "  ">
+                    <ul class="navbar-nav  "  >
                         <!-- Authentication Links -->
                         @guest
                             @if (Route::has('login'))
@@ -78,7 +78,7 @@
                                 </li>
                             @endif
                         @else
-                            <li class="nav-item dropdown"  style="margin-top:6px;">
+                            <li class="nav-item dropdown"  style="">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre   style=" color:white">
                                     {{ Auth::user()->name }}
                                 </a>
@@ -102,7 +102,7 @@
 @if(Auth::user()->is_admin==0)
 
      <li class="nav-item">
-     <a href="{{route('panieruser')}}" type="submit" class="btn btn-dark my-2" name="submit"><i class="bi bi-cart-plus-fill"></i></a>
+     <a href="{{route('panieruser')}}" type="submit" class="btn btn " name="submit">    <img src={{asset('css/icone8.png')}} style="width:25px; "></a>
 </li>
 
 

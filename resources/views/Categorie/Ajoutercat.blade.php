@@ -1,7 +1,7 @@
 @extends('backend')
 @section ('titre')
 
-<h1>FORMULAIRE personne </h1>
+
 @endsection 
 @section('content')
 

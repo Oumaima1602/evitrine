@@ -93,7 +93,7 @@
         <div class="container-fluid">
 <a href="{{ route('homme') }}" class="btn1 text-light">Categorie Homme </a>
  <a href="{{ route('femme') }}" class="btn2 text-light">Categorie  Femme </a>
- <a href="{{ route('admin.view') }}" class="btn3 text-light" > Admine view </a>
+ <a href="{{ route('admin.view') }}" class="btn3 text-light" > Admin view </a>
 </div>
 </section>
 @endif

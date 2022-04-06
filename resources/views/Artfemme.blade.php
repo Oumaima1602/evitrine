@@ -24,7 +24,7 @@
 }
 .articles {
  
-    margin : 70px 0;
+    margin : 40px 0;
     margin-right: 0px;
   margin-left: 0px;
   padding:-20px!important;
