@@ -10,7 +10,7 @@
 }
 .back{
 
-    background-image: url('bb.jpg');
+    background-image: url('technology.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -26,10 +26,10 @@
     /* padding: 10px;  */
     /* display: inline-block; */
 
-    margin-left: 50%;
+    margin-right: 50%;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
      text-align: center;
-    color:#ffffff;
+    color:#000000;
      font-size:70px; 
      margin-top: 70px;
     /* text-shadow: 5px 5px 7px  rgb(247, 247, 247); */
